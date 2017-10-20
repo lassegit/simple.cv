@@ -16,3 +16,10 @@ body {
 .user-info img {
   border-radius: 50%;
 }
+
+.user-contact {
+  list-style: none;
+}
+
+.user-contact li {
+}
