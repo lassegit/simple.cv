@@ -12,3 +12,7 @@ body {
 .user-info {
   text-align: center;
 }
+
+.user-info img {
+  border-radius: 50%;
+}
