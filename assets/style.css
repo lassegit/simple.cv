@@ -1,10 +1,14 @@
 body {
-  background: #ddd;
-}
-.title {
-  color: #555;
+  background: #f2f2f2;
+  font-family: Segoe UI,HelveticaNeue-Light,sans-serif;
 }
 
-h1 {
-  font-size: 40px;
+.wrapper {
+  margin: 30px auto;
+  padding: 0 15px;
+  max-width: 600px;
+}
+
+.user-info {
+  text-align: center;
 }
