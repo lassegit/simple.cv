@@ -13,7 +13,18 @@ body {
   text-align: center;
 }
 
-.user-info img {
+.user-title {
+  font-size: 35px;
+  margin: 20px 0 0px 0;
+}
+
+.user-sub {
+  font-weight: 100;
+  line-height: 33px;
+  margin: 10px 0;
+}
+
+.user-img {
   border-radius: 50%;
 }
 
