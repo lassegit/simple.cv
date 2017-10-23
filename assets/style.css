@@ -399,31 +399,34 @@ body {
   padding: 0 15px;
   max-width: 600px; }
 
-.user-info {
+.info {
   text-align: center; }
+  .info .pic {
+    border-radius: 50%;
+    max-width: 250px; }
+  .info .title {
+    font-size: 35px;
+    margin: 20px 0 0px 0; }
+  .info .sub {
+    font-weight: 100;
+    line-height: 33px;
+    margin: 10px 0; }
 
-.user-title {
-  font-size: 35px;
-  margin: 20px 0 0px 0; }
-
-.user-sub {
-  font-weight: 100;
-  line-height: 33px;
-  margin: 10px 0; }
-
-.user-img {
-  border-radius: 50%; }
-
-.user-contact {
-  list-style: none; }
-
-.user-contact li {
-  line-height: 40px; }
-
-.user-contact img {
-  vertical-align: middle; }
-
-.user-contact a {
-  color: #353535;
-  text-decoration: none;
-  border-bottom: 1px dashed; }
+.links {
+  list-style: none;
+  padding: 0; }
+  .links li {
+    line-height: 40px; }
+    @media (min-width: 992px) {
+      .links li {
+        display: inline-block;
+        margin: 0 6px; } }
+  .links img {
+    vertical-align: middle; }
+  .links a {
+    color: #353535;
+    text-decoration: none;
+    border-bottom: 1px dashed; }
+    .links a:hover {
+      border-bottom-style: solid;
+      color: #0000c7; }

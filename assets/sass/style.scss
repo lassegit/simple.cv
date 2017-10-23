@@ -1,8 +1,13 @@
 @import "../../node_modules/node-normalize-scss/_normalize.scss";
 
+$mobile: 768px;
+$tablet: 992px;
+$text-color: #353535;
+$hover-color: #0000c7;
+
 body {
   background: #f2f2f2;
-  color: #353535;
+  color: $text-color;
   font-family: Segoe UI,HelveticaNeue-Light,sans-serif;
 }
 
@@ -12,39 +17,50 @@ body {
   max-width: 600px;
 }
 
-.user-info {
+.info {
   text-align: center;
+
+  .pic {
+    border-radius: 50%;
+    max-width: 250px;
+  }
+
+  .title {
+    font-size: 35px;
+    margin: 20px 0 0px 0;
+  }
+
+  .sub {
+    font-weight: 100;
+    line-height: 33px;
+    margin: 10px 0;
+  }
 }
 
-.user-title {
-  font-size: 35px;
-  margin: 20px 0 0px 0;
-}
-
-.user-sub {
-  font-weight: 100;
-  line-height: 33px;
-  margin: 10px 0;
-}
-
-.user-img {
-  border-radius: 50%;
-}
-
-.user-contact {
+.links {
   list-style: none;
+  padding: 0;
+
+  li {
+    line-height: 40px;
+    @media (min-width: $tablet) {
+      display: inline-block;
+      margin: 0 6px;
+    }
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    &:hover {
+      border-bottom-style: solid;
+      color: $hover-color;
+    }
+  }
 }
 
-.user-contact li {
-  line-height: 40px;
-}
-
-.user-contact img {
-  vertical-align: middle;
-}
-
-.user-contact a {
-  color: #353535;
-  text-decoration: none;
-  border-bottom: 1px dashed;
-}
