@@ -4,14 +4,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    inlinecss: {
-      main: {
-        options: {},
-        files: {
-          'index.html': 'assets/index.html'
-        }
-      }
-    },
     assets_inline: {
       all: {
         options: {
