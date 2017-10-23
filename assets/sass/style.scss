@@ -19,6 +19,9 @@ body {
 
 .info {
   text-align: center;
+  @media (min-width: $tablet) {
+    padding-bottom: 10px;
+  }
 
   .pic {
     border-radius: 50%;
@@ -27,7 +30,9 @@ body {
 
   .title {
     font-size: 35px;
-    margin: 20px 0 0px 0;
+    margin: 20px 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #ddd;
   }
 
   .sub {
