@@ -1,0 +1,50 @@
+@import "../../node_modules/node-normalize-scss/_normalize.scss";
+
+body {
+  background: #f2f2f2;
+  color: #353535;
+  font-family: Segoe UI,HelveticaNeue-Light,sans-serif;
+}
+
+.wrapper {
+  margin: 30px auto;
+  padding: 0 15px;
+  max-width: 600px;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-title {
+  font-size: 35px;
+  margin: 20px 0 0px 0;
+}
+
+.user-sub {
+  font-weight: 100;
+  line-height: 33px;
+  margin: 10px 0;
+}
+
+.user-img {
+  border-radius: 50%;
+}
+
+.user-contact {
+  list-style: none;
+}
+
+.user-contact li {
+  line-height: 40px;
+}
+
+.user-contact img {
+  vertical-align: middle;
+}
+
+.user-contact a {
+  color: #353535;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}

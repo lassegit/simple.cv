@@ -4,6 +4,16 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    sass: {
+      options: {
+        sourceMap: false,
+      },
+      dist: {
+        files: {
+          'assets/style.css': 'assets/sass/style.scss',
+        }
+      }
+    },
     assets_inline: {
       all: {
         options: {
@@ -31,8 +41,8 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['assets/**/*.html', 'assets/**/*.css',],
-        tasks: ['assets_inline'],
+        files: ['assets/**/*.html', 'assets/**/*.scss',],
+        tasks: ['sass','assets_inline'],
       }
     },
   });
