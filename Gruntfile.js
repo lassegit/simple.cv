@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['assets/**/*.html', 'assets/**/*.scss',],
+        files: ['assets/**/*.html', 'assets/**/*.scss', 'assets/**/*.svg'],
         tasks: ['sass','assets_inline', 'htmlmin'],
       }
     },
