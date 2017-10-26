@@ -397,7 +397,7 @@ body {
   line-height: 1.5; }
 
 .wrapper {
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   padding: 0 15px;
   max-width: 600px; }
 
@@ -465,7 +465,11 @@ p {
     display: inline-block;
     margin: 3px 7px 3px 0; }
   .tech-list .title {
-    color: gray; }
+    color: gray;
+    display: block; }
+    @media (min-width: 992px) {
+      .tech-list .title {
+        display: inline-block; } }
   .tech-list .item {
     background: #0090ec;
     color: #fff;
@@ -473,3 +477,10 @@ p {
     border-radius: 5px; }
   .tech-list .item-logo {
     vertical-align: middle; }
+
+.footer {
+  color: gray;
+  text-align: right;
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+  margin-top: 50px; }
