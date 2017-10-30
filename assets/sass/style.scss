@@ -34,6 +34,18 @@ p {
   margin: 0 0 15px 0;
 }
 
+a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  font-weight: normal;
+  font-family: $font-bold;
+  &:hover {
+    border-bottom-style: solid;
+    color: #0090ec
+  }
+}
+
 .info {
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -88,18 +100,6 @@ p {
   img {
     vertical-align: middle;
   }
-
-  a {
-    color: $text-color;
-    text-decoration: none;
-    border-bottom: 1px dashed;
-    font-weight: normal;
-    font-family: $font-bold;
-    &:hover {
-      border-bottom-style: solid;
-      color: #0090ec
-    }
-  }
 }
 
 .tech-list {
@@ -128,6 +128,37 @@ p {
 
   .item-logo {
     vertical-align: middle;
+  }
+}
+
+.portfolio {
+  .portfolio-title {
+    font-weight: normal;
+    font-family: $font-bold;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-text {
+    font-weight: normal;
+    font-family: $font-normal;
+  }
+
+  .portfolio-external {
+    vertical-align: middle;
+  }
+
+  .portfolio-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    &:last-child {
+      border: none;
+    }
   }
 }
 

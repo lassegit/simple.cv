@@ -423,6 +423,16 @@ b, strong {
 p {
   margin: 0 0 15px 0; }
 
+a {
+  color: #353535;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  font-weight: normal;
+  font-family: "open_sanssemibold", sans-serif; }
+  a:hover {
+    border-bottom-style: solid;
+    color: #0090ec; }
+
 .info {
   text-align: center;
   border-bottom: 1px solid #ddd; }
@@ -463,15 +473,6 @@ p {
         margin: 0 8px; } }
   .links img {
     vertical-align: middle; }
-  .links a {
-    color: #353535;
-    text-decoration: none;
-    border-bottom: 1px dashed;
-    font-weight: normal;
-    font-family: "open_sanssemibold", sans-serif; }
-    .links a:hover {
-      border-bottom-style: solid;
-      color: #0090ec; }
 
 .tech-list {
   list-style: none;
@@ -492,6 +493,29 @@ p {
     border-radius: 5px; }
   .tech-list .item-logo {
     vertical-align: middle; }
+
+.portfolio .portfolio-title {
+  font-weight: normal;
+  font-family: "open_sanssemibold", sans-serif; }
+
+.portfolio .portfolio-image {
+  width: 100%;
+  max-height: 400px;
+  margin-bottom: 10px; }
+
+.portfolio .portfolio-text {
+  font-weight: normal;
+  font-family: "open_sansregular", sans-serif; }
+
+.portfolio .portfolio-external {
+  vertical-align: middle; }
+
+.portfolio .portfolio-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  margin-bottom: 20px; }
+  .portfolio .portfolio-item:last-child {
+    border: none; }
 
 .footer {
   color: gray;
