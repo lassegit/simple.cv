@@ -443,6 +443,7 @@ p {
     color: #808080; }
   .info .sub {
     font-family: "open_sansregular", sans-serif;
+    font-weight: normal;
     line-height: 40px;
     font-size: 30px;
     margin: 10px 0; }
