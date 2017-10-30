@@ -495,7 +495,7 @@ p {
 
 .footer {
   color: gray;
-  text-align: right;
+  text-align: left;
   border-top: 1px solid #ddd;
   padding: 15px 0;
   margin-top: 50px; }
