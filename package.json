@@ -4,13 +4,16 @@
   "version": "1.0.0",
   "homepage": "https://lassegit.github.io/",
   "devDependencies": {
+    "connect": "^3.6.5",
     "grunt": "^1.0.1",
     "grunt-assets-inline": "^0.1.19",
     "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2",
-    "node-normalize-scss": "^3.0.0"
+    "node-normalize-scss": "^3.0.0",
+    "request": "^2.83.0"
   }
 }

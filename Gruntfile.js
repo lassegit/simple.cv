@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     assets_inline: {
       all: {
         options: {
-          inlineImg: true,
+          inlineImg: false,
           inlineSvg: true,
           minify: true,
         },
@@ -45,7 +45,17 @@ module.exports = function(grunt) {
         tasks: ['sass','assets_inline', 'htmlmin'],
       }
     },
+    connect: {
+      server: {
+        options: {
+          port: 8080,
+          livereload: false,
+          keepalive: false,
+        }
+      }
+    },
   });
 
   grunt.registerTask('build', 'assets_inline', 'htmlmin');
+  grunt.registerTask('serve', ['connect', 'watch']);
 };
