@@ -6,7 +6,6 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
 html {
   line-height: 1.15;
   /* 1 */
@@ -390,10 +389,22 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("assets/font/opensans/opensans_regular_macroman/OpenSans-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("assets/font/opensans/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   background: #f2f2f2;
   color: #353535;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "open_sansregular", sans-serif;
   line-height: 1.5; }
 
 .wrapper {
@@ -402,11 +413,12 @@ body {
   max-width: 600px; }
 
 h2 {
-  font-weight: 600;
+  font-family: "open_sanssemibold", sans-serif;
   margin: 30px 0 10px 0; }
 
 b, strong {
-  font-weight: 600; }
+  font-weight: normal;
+  font-family: "open_sanssemibold", sans-serif; }
 
 p {
   margin: 0 0 15px 0; }
@@ -425,11 +437,12 @@ p {
     margin: 20px 0 20px 0;
     padding: 0 0 20px 0;
     border-bottom: 1px solid #ddd;
-    font-weight: 600; }
+    font-weight: normal;
+    font-family: "open_sanssemibold", sans-serif; }
   .info .title-passive {
     color: #808080; }
   .info .sub {
-    font-weight: 400;
+    font-family: "open_sansregular", sans-serif;
     line-height: 40px;
     font-size: 30px;
     margin: 10px 0; }
@@ -453,7 +466,8 @@ p {
     color: #353535;
     text-decoration: none;
     border-bottom: 1px dashed;
-    font-weight: 600; }
+    font-weight: normal;
+    font-family: "open_sanssemibold", sans-serif; }
     .links a:hover {
       border-bottom-style: solid;
       color: #0090ec; }
