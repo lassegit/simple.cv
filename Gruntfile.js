@@ -30,7 +30,8 @@ module.exports = function(grunt) {
       dist: {
         options: { // Reference: https://github.com/kangax/html-minifier#options-quick-reference
           removeComments: true,
-          collapseWhitespace: true,
+          conservativeCollapse: true,
+          collapseWhitespace: false,
           minifyCSS: true,
           minifyJS: true,
         },
