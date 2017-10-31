@@ -30,8 +30,8 @@ module.exports = function(grunt) {
       dist: {
         options: { // Reference: https://github.com/kangax/html-minifier#options-quick-reference
           removeComments: true,
-          conservativeCollapse: true,
-          collapseWhitespace: false,
+          conservativeCollapse: false,
+          collapseWhitespace: true,
           minifyCSS: true,
           minifyJS: true,
         },
@@ -40,10 +40,25 @@ module.exports = function(grunt) {
         }
       }
     },
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: 'buildstamp',
+              replacement: '<%= new Date().toUTCString() %>'
+            }
+          ]
+        },
+        files: [
+          {src: ['index.html'], dest: 'index.html'}
+        ]
+      }
+    },
     watch: {
       scripts: {
         files: ['assets/**/*.html', 'assets/**/*.scss', 'assets/**/*.svg'],
-        tasks: ['sass','assets_inline', 'htmlmin'],
+        tasks: ['sass','assets_inline', 'htmlmin', 'replace'],
       }
     },
     connect: {
@@ -57,6 +72,6 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.registerTask('build', 'sass', 'assets_inline', 'htmlmin');
+  grunt.registerTask('build', ['sass', 'assets_inline', 'htmlmin', 'replace']);
   grunt.registerTask('serve', ['connect', 'watch']);
 };
