@@ -500,8 +500,8 @@ a {
 
 .portfolio .portfolio-image {
   width: 100%;
-  max-height: 400px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border-radius: 5px; }
 
 .portfolio .portfolio-text {
   font-weight: normal;
@@ -509,13 +509,6 @@ a {
 
 .portfolio .portfolio-external {
   vertical-align: middle; }
-
-.portfolio .portfolio-item {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 30px;
-  margin-bottom: 20px; }
-  .portfolio .portfolio-item:last-child {
-    border: none; }
 
 .footer {
   color: gray;
