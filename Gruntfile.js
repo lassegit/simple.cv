@@ -56,6 +56,6 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.registerTask('build', 'assets_inline', 'htmlmin');
+  grunt.registerTask('build', 'sass', 'assets_inline', 'htmlmin');
   grunt.registerTask('serve', ['connect', 'watch']);
 };
