@@ -19,6 +19,7 @@ module.exports = function(grunt) {
         options: {
           inlineImg: false,
           inlineSvg: true,
+          inlineSvgBase64: true,
           minify: true,
         },
         files: {

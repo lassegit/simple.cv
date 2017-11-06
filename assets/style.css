@@ -405,7 +405,9 @@ body {
   background: #f2f2f2;
   color: #353535;
   font-family: "open_sansregular", sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
 
 .wrapper {
   margin: 30px auto 0 auto;
