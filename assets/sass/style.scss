@@ -93,9 +93,10 @@ a {
 
   li {
     line-height: 40px;
-    @media (min-width: $tablet) {
+    @media (min-width: $mobile) {
       display: inline-block;
-      margin: 0 8px;
+      margin: 3px 8px;
+      width: 230px;
     }
   }
 
