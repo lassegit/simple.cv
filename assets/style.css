@@ -482,7 +482,7 @@ a {
   padding: 0; }
   .tech-list li {
     display: inline-block;
-    margin: 3px 7px 3px 0; }
+    margin: 4px 4px 4px 4px; }
   .tech-list .title {
     color: gray;
     display: block; }
